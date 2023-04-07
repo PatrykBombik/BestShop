@@ -71,7 +71,7 @@ img {
     box-sizing: border-box;
 }
 
-.mainMenu a:last-child{
+.mainMenu a:last-child {
     margin-right: 5.53125rem;
 }
 
@@ -99,7 +99,7 @@ img {
 
 .hero .hero__lbl {
     font-size: 1rem;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
     line-height: 1.375;
@@ -126,7 +126,7 @@ img {
 }
 
 .hero .hero__btn:hover {
-    color:var(--color-black);
+    color: var(--color-black);
 }
 
 .hero .hero__btn .hero__bgi {
@@ -146,6 +146,7 @@ img {
     line-height: 1.167;
     color: var(--color-black);
     text-align: center;
+    margin-top: 100px;
 }
 
 .main .mainCols {
@@ -160,6 +161,8 @@ img {
     max-width: 176px;
     width: 100%;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 .main .mainCol .mainCol__pic1 {
@@ -169,6 +172,13 @@ img {
     background-color: var(--color-redish);
     background-position: center;
 }
+
+/*.main .mainCol .mainCol__pic1::after {*/
+/*    content: '';*/
+/*    background-image: url("../assets/Person.svg");*/
+/*    background-size: contain;*/
+/*    display: inline-block;*/
+/*}*/
 
 .main .mainCol .mainCol__pic2 {
     height: 3.9375rem;
