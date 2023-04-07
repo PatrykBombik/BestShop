@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! reset.css v8.0.1 | MIT License | github.com/necolas/reset.css */
 
 /* Document
    ========================================================================== */
@@ -142,7 +142,7 @@ sup {
    ========================================================================== */
 
 /**
- * Remove the border on images inside links in IE 10.
+ * Remove the border on assets inside links in IE 10.
  */
 
 img {
