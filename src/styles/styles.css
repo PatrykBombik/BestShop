@@ -231,21 +231,22 @@ img {
     color: var(--color-grey);
 }
 
+/*BENEFITS*/
+
 .benefits {
     width: 100%;
-    height: 1395px;
     background-color: var(--color-light-grey);
     padding: 100px 0;
 
 }
 
 .benefits__container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-main);
-    padding: 0 100px;
 }
 
 .benefits__inner {
@@ -427,29 +428,32 @@ img {
     width: 295px;
     height: 207px;
 }
+/* PRICING */
 
 .pricing {
     width: 100%;
+    max-width: var(--max-width);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color-white);
+    margin: 100px 180px 100px 180px;
 }
 
 .pricing__main--title {
     font-size: 2.25rem;
-    margin-top: 100px;
     font-family: var(--font-main);
     font-weight: 400;
     line-height: 1.16;
 }
 
 .pricing__main--boxes {
-    max-width: var(--max-width);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 .pricing__items {
@@ -643,6 +647,45 @@ img {
 
 .contact__info {
     width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact__info--tittle {
+    font-family: var(--font-main);
+    font-size: 49px;
+    line-height: 3.6875rem;
+    font-weight: 400;
+}
+
+.contact__info p {
+    font-family: var(--font-second);
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin: 22px 0 42px;
+}
+
+.contact__info--details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-family: var(--font-second);
+    font-size: 1rem;
+}
+
+.contact__info--details a {
+    text-decoration: none;
+    color: var(--color-grey);
+    margin-right: 20px;
+}
+
+.contact__info--details a img {
+    vertical-align: middle;
+    height: 27px;
+    width: 27px;
+    margin-right: 10px;
 }
 
 .contact__inputs {
