@@ -626,3 +626,25 @@ img {
     background-color: var(--color-green);
 }
 
+/*CONTACT*/
+
+.contact {
+    width: 100%;
+}
+
+.contact__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 80px 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__info {
+    width: 50%;
+}
+
+.contact__inputs {
+    width: 50%;
+}
