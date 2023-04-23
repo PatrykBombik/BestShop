@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+
+  .hero__lead {
+    font-size: 3.0625rem;
+    line-height: 1.16;
+    font-family: $font-main;
+    font-weight: 400;
+    color: $color-black;
+    text-align: center;
+    margin-top: 8.125rem;
+  }
+
+  .hero__lbl {
+    font-size: 1rem;
+    font-family: $font-second;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.375;
+    color: $color-black;
+    margin-top: 1.25rem;
+  }
+
+  .hero__btn {
+    font-size: 1rem;
+    font-family: $font-second;
+    line-height: 1.375;
+    font-weight: 700;
+    color: $color-white;
+    background-color: $color-primary;
+    border-radius: 2.5rem;
+    width: 27.5rem;
+    height: 4.1875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 2.375rem;
+    transition: 200ms ease-in-out;
+  }
+
+  .hero__btn:hover {
+    color: $color-black;
+  }
+
+  .hero__bgi {
+    width: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

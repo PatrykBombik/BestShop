@@ -1,0 +1,200 @@
+.benefits {
+  width: 100%;
+  background-color: $color-light-grey;
+  padding: 100px 0;
+
+  .benefits__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-main;
+
+    .benefits__inner {
+      width: 1124px;
+      height: 370px;
+      background-color: $color-white;
+      border: 1px solid rgb(232, 233, 237);
+      margin-bottom: 37px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .benefits__inner--macbook {
+      position: relative;
+
+      .benefits__inner--text {
+        box-sizing: content-box;
+        max-width: 415px;
+        margin: 90px 36px;
+
+
+        .benefits__inner--title {
+          font-family: $font-main;
+          font-weight: 400;
+          font-size: 2.25rem;
+          line-height: 2.625rem;
+        }
+
+        .benefits__inner--lead {
+          margin-top: 30px;
+          line-height: 1.375rem;
+          font-size: 1rem;
+          font-family: $font-second;
+          color: $color-black;
+        }
+      }
+
+      .benefits__inner--text::after {
+        content: "";
+        width: 332px;
+        height: 4px;
+        background-color: $color-redish;
+        display: block;
+        margin-top: 50px;
+      }
+
+      .benefits__inner--picMac {
+        img {
+          width: 386px;
+          height: 218px;
+          position: relative;
+          vertical-align: middle;
+          margin: 0 117px 0 0;
+        }
+      }
+
+      .benefits__inner--picMac::before {
+        content: "";
+        width: 180px;
+        height: 180px;
+        background-color: $color-redish;
+        display: block;
+        border-radius: 50px;
+        position: absolute;
+        right: 109px;
+        top: 45px;
+        transform: rotate(45deg);
+      }
+    }
+
+    .benefits__inner--iphone {
+      position: relative;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      .benefits__inner--text {
+        margin: 70px 0;
+        max-width: 415px;
+        padding: 0 20px 0 70px;
+
+        .benefits__inner--title {
+          font-family: $font-main;
+          font-weight: 400;
+          font-size: 2.25rem;
+          line-height: 2.625rem;
+          max-width: 300px;
+        }
+
+        .benefits__inner--lead {
+          font-size: 1rem;
+          line-height: 1.375rem;
+        }
+      }
+
+      .benefits__inner--text::after {
+        content: "";
+        width: 332px;
+        height: 4px;
+        background-color: $color-primary;
+        display: block;
+        margin-top: 50px;
+      }
+
+      .benefits__inner--piciPhone {
+        img {
+          width: 426px;
+          height: 328px;
+          position: absolute;
+          top: 40px;
+          left: 40px;
+        }
+      }
+
+      .benefits__inner--piciPhone::before {
+        content: "";
+        width: 320px;
+        height: 320px;
+        background-color: $color-green;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        left: 40px;
+        top: 20px;
+      }
+    }
+
+    .benefits__inner--trumpet {
+      position: relative;
+      background: none;
+      border: none;
+
+      .benefit__inner--double {
+        display: flex;
+        justify-content: space-between;
+
+        .benefits__inner--text {
+          box-sizing: border-box;
+          max-width: 640px;
+          height: 386px;
+          padding: 70px 35px;
+          background-color: $color-white;
+          border: 1px solid rgb(232, 233, 237);
+          border-radius: 5px;
+
+          .benefits__inner--title {
+            font-family: $font-main;
+            font-weight: 400;
+            font-size: 2.25rem;
+            line-height: 2.625rem;
+            max-width: 300px;
+          }
+
+          .benefits__inner--lead {
+            font-size: 1rem;
+            line-height: 1.375rem;
+          }
+        }
+
+        .benefits__inner--text::after {
+          content: "";
+          width: 332px;
+          height: 4px;
+          background-color: $color-green;
+          display: block;
+          margin-top: 50px;
+        }
+      }
+
+      .benefits__inner--picTrumpet {
+        width: 472px;
+        height: 378px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: $color-green;
+        border: none;
+        margin-left: 60px;
+
+        img {
+          width: 295px;
+          height: 207px;
+        }
+      }
+    }
+  }
+}

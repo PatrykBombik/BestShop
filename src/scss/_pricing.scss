@@ -1,0 +1,185 @@
+.pricing {
+  width: 100%;
+  max-width: $max-width;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-white;
+  margin: 100px 180px 100px 180px;
+
+  .pricing__main--title {
+    font-size: 2.25rem;
+    font-family: $font-main;
+    font-weight: 400;
+    line-height: 1.16;
+  }
+  .pricing__main--boxes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    .pricing__items {
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-family: $font-second;
+      list-style-type: none;
+    }
+
+    .pricing__items::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      display: inline-block;
+      margin-right: 10px;
+      background-image: url(../assets/Checkmark-1.svg);
+    }
+
+    .pricing__items--not::before {
+      background-image: url("../assets/Close.svg");
+    }
+
+    .pricing__box--basic {
+      width: 370px;
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid $color-redish$;
+      position: relative;
+      padding-bottom: 55px;
+
+      .pricing__basic--type {
+        font-size: 1.25rem;
+        font-family: $font-main;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 34px;
+      }
+
+      .pricing__basic--price {
+        margin-top: 25px;
+        font-size: 2.875rem;
+        color: $color-redish;
+        font-family: $font-second;
+        font-weight: 300;
+      }
+
+      .pricing__basic--items {
+        margin-top: 90px;
+      }
+
+      .pricing__basic--btn {
+        position: absolute;
+        transform: translate(0, -50%);
+        top: 100%;
+        background-color: $color-redish;
+      }
+    }
+    .pricing__box--professional {
+      width: 400px;
+      margin: 0 40px;
+      box-shadow: 5px 1px 27px rgba(7, 172, 230, .16);
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      border: 1px solid $color-primary;
+      padding-bottom: 55px;
+
+      .pricing__professional--type {
+        font-size: 1.3125rem;
+        font-family: $font-main;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 34px;
+      }
+
+      .pricing__professional--price {
+        margin-top: 25px;
+        font-size: 2.875rem;
+        color: $color-primary;
+        font-family: $font-second;
+        font-weight: 300;
+      }
+
+      .pricing__professional--limited {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 0.75rem;
+        font-family: $font-main;
+        font-weight: 700;
+      }
+
+      .pricing__professional--items {
+        margin-top: 60px;
+        margin-bottom: 25px;
+      }
+
+      .pricing__professional--btn {
+        position: absolute;
+        transform: translate(0, -50%);
+        top: 100%;
+        background-color: $color-primary;
+      }
+    }
+    .pricing__box--premium {
+      width: 370px;
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      border: 1px solid $color-green;
+      padding-bottom: 55px;
+
+      .pricing__premium--type {
+        font-size: 1.25rem;
+        font-family: $font-main;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 34px;
+      }
+
+      .pricing__premium--price {
+        margin-top: 25px;
+        font-size: 2.875rem;
+        color: $color-green;
+        font-family: $font-second;
+        font-weight: 300;
+      }
+
+      .pricing__premium--limited {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 0.75rem;
+        font-family: $font-main;
+        font-weight: 700;
+      }
+
+      .pricing__premium--items {
+        margin-top: 60px;
+      }
+      .pricing__premium--btn {
+        position: absolute;
+        transform: translate(0, -50%);
+        top: 100%;
+        background-color: $color-green;
+      }
+    }
+  }
+  .pricing__btn {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 16px 65px;
+    border-radius: 35px;
+    border: none;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: $font-second;
+  }
+}

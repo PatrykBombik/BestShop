@@ -6,21 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="./src/scss/main.scss">
 </head>
 <body>
 
 <div class="intro" id="intro">
 
-    <header class="container">
-        <div class="container__inner">
+    <header class="header__container">
+        <div class="header__container__inner">
             <a href="#intro" class="logo">
-                <span class="logo logo_inner">BestShop</span>
+                <span class="logo logo__inner">BestShop</span>
             </a>
             <nav class="mainMenu">
                 <a href="#intro" class="mainMenu__item mainMenu__item--active">Why us</a>
@@ -40,7 +41,7 @@
 
     <div class="main">
         <h2 class="mainLbl">The most popular sales platform in country</h2>
-        <div class="mainCols">
+        <div class="mainCol__container">
             <div class="mainCol">
                 <div class="mainCol__pic1"><img src="./src/assets/Person.svg" alt="Person stat"></div>
                 <p class="mainCol__nmb">100000+</p>

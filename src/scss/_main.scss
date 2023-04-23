@@ -1,0 +1,93 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  .mainLbl {
+    font-family: $font-main;
+    font-size: 2.25rem;
+    line-height: 1.167;
+    color: $color-black;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .mainCol__container {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin: 0 120px 0 120px;
+
+    .mainCol {
+      display: flex;
+      flex-direction: column;
+      max-width: 176px;
+      width: 100%;
+      align-items: center;
+      margin-top: 100px;
+      margin-bottom: 150px;
+
+      .mainCol__pic1 {
+        height: 3.9375rem;
+        width: 3.9375rem;
+        border-radius: 50px;
+        background-color: $color-redish;
+        background-position: center;
+        position: relative;
+      }
+
+      .mainCol__pic1 img {
+        position: absolute;
+        width: 70%;
+        left: 50%;
+      }
+
+      .mainCol__pic2 {
+        height: 3.9375rem;
+        width: 3.9375rem;
+        border-radius: 50px;
+        background-color: $color-primary;
+        background-position: center;
+        position: relative;
+      }
+
+      .mainCol__pic2 img{
+        position: absolute;
+        left: 45%;
+        top: 20%;
+      }
+
+      .mainCol__pic3 {
+        height: 3.9375rem;
+        width: 3.9375rem;
+        border-radius: 50px;
+        background-color: $color-green;
+        background-position: center;
+        position: relative;
+      }
+
+      .mainCol__pic3 img{
+        position: absolute;
+        left: 40%;
+        width: 80%;
+        top: 10%;
+      }
+
+      .mainCol__nmb {
+        font-family: $font-main;
+        font-weight: 800;
+        font-size: 1rem;
+        line-height: 1.2;
+        color: $color-black;
+        letter-spacing: 0.375rem;
+      }
+
+      .mainCol__wrd {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.1875;
+        color: $color-grey;
+      }
+    }
+  }
+}
