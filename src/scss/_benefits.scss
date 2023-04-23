@@ -3,6 +3,10 @@
   background-color: $color-light-grey;
   padding: 100px 0;
 
+  @include breakMobileL {
+    height: 130%;
+  }
+
   .benefits__container {
     width: 100%;
     display: flex;
@@ -21,10 +25,22 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include breakLaptop {
+        width: 980px;
+      }
     }
 
     .benefits__inner--macbook {
       position: relative;
+
+      @include breakTablet {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+        height: 600px;
+      }
 
       .benefits__inner--text {
         box-sizing: content-box;
@@ -86,10 +102,24 @@
       flex-direction: row-reverse;
       justify-content: space-between;
 
+      @include breakTablet {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        width: 550px;
+        height: 600px;
+      }
+
       .benefits__inner--text {
         margin: 70px 0;
         max-width: 415px;
         padding: 0 20px 0 0;
+
+        @include breakTablet {
+          max-width: 650px;
+          width: 650px;
+          height: 700px;
+        }
 
         .benefits__inner--title {
           font-family: $font-main;
@@ -146,6 +176,15 @@
         display: flex;
         justify-content: space-between;
 
+        @include breakTablet {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 0 auto;
+          width: 550px;
+          height: 600px;
+        }
+
         .benefits__inner--text {
           box-sizing: border-box;
           max-width: 640px;
@@ -189,6 +228,11 @@
         background-color: $color-green;
         border: none;
         margin-left: 60px;
+
+        @include breakMobileL {
+          width: 372px;
+          height: 278px;
+        }
 
         img {
           width: 295px;
