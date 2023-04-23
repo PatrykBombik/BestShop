@@ -4,4 +4,8 @@ html, body {
 
 .intro {
   background-color: $color-white;
+
+  @include breakpt1352px {
+    width: 100%;
+  }
 }

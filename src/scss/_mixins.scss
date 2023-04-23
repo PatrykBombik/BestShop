@@ -1,0 +1,41 @@
+@mixin breakpt1352px {
+  @media (max-width: 1352px) {
+    @content;
+  }
+}
+
+@mixin breakLaptop {
+  @media (max-width: #{$brkLaptop}) {
+    @content;
+  }
+}
+
+@mixin breakTablet {
+  @media (max-width: #{$brkTablet}) {
+    @content;
+  }
+}
+
+@mixin breakMobileL {
+  @media (max-width: #{$brkMobileL}) {
+    @content;
+  }
+}
+
+@mixin breakMobileM {
+  @media (max-width: #{$brkMobileM}) {
+    @content;
+  }
+}
+
+@mixin breakMobileS {
+  @media (max-width: #{$brkMobileS}) {
+    @content;
+  }
+}
+
+@mixin menuHide {
+  @media (max-width: 720px) {
+    display: none;
+  }
+}
