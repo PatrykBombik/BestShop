@@ -4,6 +4,10 @@
   align-items: center;
   margin-inline: auto;
 
+  @include breakMobileL {
+    height: 100vh;
+  }
+
   .hero__lead {
     font-size: 3.0625rem;
     line-height: 1.16;
@@ -12,6 +16,10 @@
     color: $color-black;
     text-align: center;
     margin-top: 8.125rem;
+
+    @include breakMobileL {
+      font-size: 2.1875rem;
+    }
   }
 
   .hero__lbl {
@@ -22,6 +30,10 @@
     line-height: 1.375;
     color: $color-black;
     margin-top: 1.25rem;
+
+    @include breakMobileL {
+      padding: 0 60px;
+    }
   }
 
   .hero__btn {
@@ -40,6 +52,11 @@
     text-decoration: none;
     margin-top: 2.375rem;
     transition: 200ms ease-in-out;
+
+    @include breakMobileL {
+      width: 310px;
+      height: 67px;
+    }
   }
 
   .hero__btn:hover {
@@ -51,5 +68,9 @@
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include breakMobileL {
+      width: 200%;
+    }
   }
 }
