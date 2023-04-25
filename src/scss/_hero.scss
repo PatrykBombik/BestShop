@@ -19,6 +19,7 @@
 
     @include breakMobileL {
       font-size: 2.1875rem;
+      margin-top: 100px;
     }
   }
 
@@ -55,7 +56,7 @@
 
     @include breakMobileL {
       width: 310px;
-      height: 67px;
+      padding: 22px 0;
     }
   }
 
