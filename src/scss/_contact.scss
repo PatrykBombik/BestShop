@@ -10,6 +10,7 @@
 
     @include breakTablet {
       margin: 0 auto;
+      padding: 80px 50px;
     }
 
     .contact__info {
@@ -50,11 +51,19 @@
           color: $color-grey;
           margin-right: 20px;
 
+          @include breakTablet {
+            margin-right: 0;
+          }
+
           img {
             vertical-align: middle;
             height: 27px;
             width: 27px;
             margin-right: 10px;
+
+            @include breakTablet {
+              margin-right: 0;
+            }
           }
         }
 
@@ -63,11 +72,19 @@
           color: $color-grey;
           margin-right: 20px;
 
+          @include breakTablet {
+            margin-right: 5px;
+          }
+
           img {
             vertical-align: middle;
             height: 27px;
             width: 27px;
             margin-right: 10px;
+
+            @include breakTablet {
+              margin-right: 0;
+            }
           }
         }
       }
