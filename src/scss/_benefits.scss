@@ -126,6 +126,10 @@
           max-width: 650px;
           width: 650px;
           height: 700px;
+          position: absolute;
+          top: 275px;
+          padding-right: 150px;
+          left: 20px;
         }
 
         .benefits__inner--title {
@@ -158,6 +162,11 @@
           position: absolute;
           top: 40px;
           left: 40px;
+
+          @include breakTablet {
+            top: 30px;
+            left: 80px;
+          }
         }
       }
 
@@ -165,12 +174,16 @@
         content: "";
         width: 320px;
         height: 320px;
-        background-color: $color-green;
+        background-color: $color-primary;
         display: block;
         border-radius: 50%;
         position: absolute;
         left: 40px;
         top: 20px;
+
+        @include breakTablet {
+          left: 80px;
+        }
       }
     }
 
@@ -236,6 +249,11 @@
         border: none;
         margin-left: 60px;
 
+        @include breakTablet {
+          margin-left: 0;
+          width: 550px;
+        }
+
         @include breakMobileL {
           width: 372px;
           height: 278px;
@@ -244,6 +262,10 @@
         img {
           width: 295px;
           height: 207px;
+
+          @include breakTablet {
+            margin-top: 35px;
+          }
         }
       }
     }
