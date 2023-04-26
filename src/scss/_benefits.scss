@@ -37,6 +37,11 @@
         width: 550px;
         height: 600px;
       }
+
+      @include breakMobileL {
+        width: 314px;
+        height: 370px;
+      }
     }
 
     .benefits__inner--macbook {
@@ -52,12 +57,20 @@
           margin: 36px;
         }
 
+        @include breakMobileL {
+          margin: 36px 0 0 0;
+        }
 
         .benefits__inner--title {
           font-family: $font-main;
           font-weight: 400;
           font-size: 2.25rem;
           line-height: 2.625rem;
+
+          @include breakMobileL {
+            font-size: 1.875rem;
+            padding: 0 20px;
+          }
         }
 
         .benefits__inner--lead {
@@ -66,6 +79,11 @@
           font-size: 1rem;
           font-family: $font-second;
           color: $color-black;
+
+          @include breakMobileL {
+            font-size: 0.875rem;
+            padding: 0 20px;
+          }
         }
       }
 
@@ -76,6 +94,10 @@
         background-color: $color-redish;
         display: block;
         margin-top: 50px;
+
+        @include breakMobileL {
+          display: none;
+        }
       }
 
       .benefits__inner--picMac {
@@ -89,6 +111,11 @@
 
           @include breakTablet {
             margin: 0 auto;
+          }
+
+          @include breakMobileL {
+            width: 192px;
+            height: 109px;
           }
         }
       }
@@ -104,6 +131,14 @@
         right: 109px;
         top: 45px;
         transform: rotate(45deg);
+
+        @include breakMobileL {
+          width: 90px;
+          height: 90px;
+          top: 20px;
+          right: 50px;
+          border-radius: 20px;
+        }
       }
     }
 
@@ -132,17 +167,35 @@
           left: 20px;
         }
 
+        @include breakMobileL {
+          top: 100px
+        }
+
         .benefits__inner--title {
           font-family: $font-main;
           font-weight: 400;
           font-size: 2.25rem;
           line-height: 2.625rem;
           max-width: 300px;
+
+          @include breakMobileL {
+            font-size: 1.875rem;
+            padding: 0 10px;
+            line-height: 2rem;
+            max-width: 270px;
+          }
         }
 
         .benefits__inner--lead {
           font-size: 1rem;
           line-height: 1.375rem;
+          font-family: $font-second;
+
+          @include breakMobileL {
+            font-size: 0.875rem;
+            max-width: 270px;
+            padding: 10px 0 0 10px;
+          }
         }
       }
 
@@ -153,6 +206,10 @@
         background-color: $color-primary;
         display: block;
         margin-top: 50px;
+
+        @include breakMobileL {
+          display: none;
+        }
       }
 
       .benefits__inner--piciPhone {
@@ -166,6 +223,11 @@
           @include breakTablet {
             top: 30px;
             left: 80px;
+          }
+
+          @include breakMobileL {
+            width: 175px;
+            height: 135px;
           }
         }
       }
@@ -183,6 +245,11 @@
 
         @include breakTablet {
           left: 80px;
+        }
+
+        @include breakMobileL {
+          height: 132px;
+          width: 132px;
         }
       }
     }
@@ -205,6 +272,11 @@
           height: 600px;
         }
 
+        @include breakMobileL {
+          margin: 0;
+          height: 415px;
+        }
+
         .benefits__inner--text {
           box-sizing: border-box;
           max-width: 640px;
@@ -214,17 +286,33 @@
           border: 1px solid rgb(232, 233, 237);
           border-radius: 5px;
 
+          @include breakMobileL {
+            max-width: 317px;
+            height: 350px;
+            padding: 25px;
+          }
+
           .benefits__inner--title {
             font-family: $font-main;
             font-weight: 400;
             font-size: 2.25rem;
             line-height: 2.625rem;
             max-width: 300px;
+
+            @include breakMobileL {
+              font-size: 1.875rem;
+              padding: 0 20px;
+            }
           }
 
           .benefits__inner--lead {
             font-size: 1rem;
             line-height: 1.375rem;
+
+            @include breakMobileL {
+              font-size: 0.875rem;
+              padding: 0 20px;
+            }
           }
         }
 
@@ -235,6 +323,10 @@
           background-color: $color-green;
           display: block;
           margin-top: 50px;
+
+          @include breakMobileL {
+            display: none;
+          }
         }
       }
 
@@ -255,7 +347,7 @@
         }
 
         @include breakMobileL {
-          width: 372px;
+          width: 315px;
           height: 278px;
         }
 
