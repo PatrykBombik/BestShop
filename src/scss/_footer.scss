@@ -20,6 +20,10 @@
       justify-content: space-around;
       align-items: flex-start;
 
+      @include breakMobileL {
+        margin-top: 10px;
+      }
+
       .footer__logo {
         font-family: $font-main;
         font-size: 2rem;

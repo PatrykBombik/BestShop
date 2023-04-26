@@ -13,6 +13,12 @@
       padding: 80px 50px;
     }
 
+    @include breakMobileL {
+      padding: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .contact__info {
       width: 50%;
       flex-direction: column;
@@ -21,6 +27,11 @@
 
       @include breakTablet {
         margin-right: 10px;
+      }
+
+      @include breakMobileL {
+        width: 100%;
+        margin-left: 20px;
       }
 
       .contact__info--tittle {
@@ -85,10 +96,13 @@
             @include breakTablet {
               margin-right: 0;
             }
+
+          }
+          @include breakMobileL {
+            margin-left: 20px;
           }
         }
       }
-
 
       .contact__inputs {
         width: 50%;
@@ -177,3 +191,10 @@
     }
   }
 }
+
+@include breakMobileL {
+  .contact__inputs {
+    margin-top: 20px;
+      width: 100%;
+    }
+  }
