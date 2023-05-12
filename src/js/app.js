@@ -23,54 +23,104 @@ const terminalSumPrice = document.querySelector('li[data-id="terminal"] .item__p
 const totalPrice = document.querySelector('#total-price');
 const totalPriceLabel = document.querySelector('#total-price .total__price');
 
-let counterSum = [];
+let productPrice = 0.5;
+let orderPrice = 0.5;
+let packageBasicPrice = 0;
+let packageProfessionalPrice = 25;
+let packagePremiumPrice = 60;
+let accountingPrice = 10;
+let terminalPrice = 10;
 
-products.addEventListener('input',(e) => {
-    const productPrice = Math.floor(e.target.value) * 0.5;
-    const productCalc = Math.floor(e.target.value) + ' * $0.5 ';
+function calculateTotalPrice() {
+    let total = 0;
+
+    if (productsSumLabel.style.display === 'block') {
+        total += parseInt(products.value) * productPrice;
+    }
+
+    if (ordersSumLabel.style.display === 'block') {
+        total += parseInt(orders.value) * orderPrice;
+    }
+
+    if (packageSumLabel.style.display === 'block') {
+        if (packageSumCalc.innerText === 'Basic ') {
+            total += packageBasicPrice;
+        } else if (packageSumCalc.innerText === 'Professional ') {
+            total += packageProfessionalPrice;
+        } else if (packageSumCalc.innerText === 'Premium ') {
+            total += packagePremiumPrice;
+        }
+    }
+
+    if (accountingSumLabel.style.display === 'block') {
+        total += accountingPrice;
+    }
+
+    if (terminalSumLabel.style.display === 'block') {
+        total += terminalPrice;
+    }
+
+    totalPriceLabel.innerText = '$ ' + total;
+}
+
+products.addEventListener('input', (e) => {
     productsSumLabel.style.display = 'block';
     totalPrice.style.display = 'block';
-    productSumCalc.innerText = productCalc;
-    productSumPrice.innerText = ' $' + productPrice;
-    counterSum.push(productPrice);
+    productSumCalc.innerText = Math.floor(e.target.value) + ' * $0.5 ';
+    productSumPrice.innerText = ' $' + Math.floor(e.target.value) * productPrice;
+    calculateTotalPrice();
 })
 
-orders.addEventListener('input',() =>{
+orders.addEventListener('input', (e) => {
     ordersSumLabel.style.display = 'block';
     totalPrice.style.display = 'block';
-
+    ordersSumCalc.innerText = Math.floor(e.target.value) + ' * $0.5 ';
+    ordersSumPrice.innerText = ' $ ' + Math.floor(e.target.value) * orderPrice;
+    calculateTotalPrice();
 })
-packageSelector.addEventListener("click",() => {
+
+packageSelector.addEventListener("click", () => {
     packageList.style.display = packageList.style.display === "none" ? "block" : "none";
 })
-window.addEventListener("click",(e) => {
+window.addEventListener("click", (e) => {
     if (e.target !== packageSelector) {
         packageList.style.display = 'none';
     }
 })
-packageBasic.addEventListener('click',() => {
+packageBasic.addEventListener('click', () => {
     packageSumLabel.style.display = 'block';
     totalPrice.style.display = 'block';
+    packageSumCalc.innerText = 'Basic ';
+    packageSumPrice.innerText = '$ ' + packageBasicPrice;
+    calculateTotalPrice();
+})
 
-})
-packageProfessional.addEventListener('click',() => {
+packageProfessional.addEventListener('click', () => {
     packageSumLabel.style.display = 'block';
     totalPrice.style.display = 'block';
+    packageSumCalc.innerText = 'Professional ';
+    packageSumPrice.innerText = '$ ' + packageProfessionalPrice;
+    calculateTotalPrice();
+})
 
-})
-packagePremium.addEventListener('click',() => {
+packagePremium.addEventListener('click', () => {
     packageSumLabel.style.display = 'block';
     totalPrice.style.display = 'block';
+    packageSumCalc.innerText = 'Premium ';
+    packageSumPrice.innerText = '$ ' + packagePremiumPrice;
+    calculateTotalPrice();
 })
-accounting.addEventListener('change',() => {
+
+accounting.addEventListener('change', (e) => {
     accountingSumLabel.style.display = 'block';
     totalPrice.style.display = 'block';
-
+    accountingSumPrice.innerText = '$ ' + accountingPrice;
+    calculateTotalPrice();
 })
-terminal.addEventListener('change',() => {
+
+terminal.addEventListener('change', () => {
     terminalSumLabel.style.display = 'block';
     totalPrice.style.display = 'block';
-
+    terminalSumPrice.innerText = '$ ' + terminalPrice;
+    calculateTotalPrice();
 })
-
-totalPriceLabel.innerText = '$ ' + counterSum;
